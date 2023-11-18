@@ -1,79 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Buhurt</title>
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-.grid-container{
-                
-                display: grid;
-                grid-template-columns: 2fr 1fr 1fr 2fr;
-                grid-template-rows: 1fr 1fr 1fr;
-                grid-template-areas:
-                "img1 . article1 article1"
-                "article2 article2 . img2"
-                ". video video .";}
-                .img1 {grid-area: img1;}
-                .article1 {grid-area: article1;}
-                .img2 {grid-area: img2;}
-                .video {grid-area: video;}
-                .article2 {grid-area: article2;}
-                .img1 {width: 100%; height: auto;}
-                .article1 {width: 100%; height: auto;}
-                .img2 {width: 100%; height: auto;}
-                .video {width: 100%; height: auto;}
-        </style>
-    </head>
-    <body>
-        <header>
-            <img src="images/logo.png" alt="crossed swords">
-            <h1>The World of Buhurt</h1>
-            <nav>
-                <a href="https://tomireg.github.io/WDA/index.html">Home</a>
-                <a href="https://tomireg.github.io/WDA/equipment.html">Weapons and armour</a>
-                <a href="https://tomireg.github.io/WDA/forms.html">Competition forms</a>
-                <a href="https://tomireg.github.io/WDA/videogames.html">Buhurt in video games</a>
-            </nav>
-        </header>
-        <main class="grid-container">
+
+<head>
+    <title>Buhurt</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .grid-container {
+            align-items: center;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 0.5fr 0.5fr 2fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "img1 article1 article1 article1"
+                "article2 article2 article2 img2";
+
+        }
+
+        .img1 {
+            grid-area: img1;
+        }
+
+        .article1 {
+            grid-area: article1;
+        }
+
+        .img2 {
+            grid-area: img2;
+            justify-self: right;
+        }
+
+        .video {
+            grid-area: video;
+        }
+
+        .article2 {
+            grid-area: article2;
+        }
+
+        .img1 {
+            width: 100%;
+            height: auto;
+        }
+
+        .article1 {
+            width: 100%;
+            height: auto;
+            padding-left: 5%;
+            font-size: 1.5rem;
+        }
+
+        .article2 {
+            width: 100%;
+            height: auto;
+            padding-right: 10%;
+            font-size: 1.5rem;
+        }
+
+        .img2 {
+            width: 100%;
+            height: auto;
+            padding-left: 5%;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            border: 1px solid blue;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+
+        nav li {
+            display: inline-block;
+        }
+
+        nav li:hover,
+        nav li:focus {
+            background-color: #ddd;
+            /* Background color on hover/focus */
+            color: #333;
+            /* Text color on hover/focus */
+
+        }
+
+        .nav-item {
+            border: 1px solid black;
+            padding: .5em 1em;
+            /*margin-left: 3em;*/
+            font-size: 2rem;
+        }
+
+        .nav-container {
+            margin-bottom: 2rem;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="crossed swords">
+        <h1>The World of Buhurt</h1>
+        <nav>
+            <ul class="nav-container">
+                <li class="nav-item"><a href="https://tomireg.github.io/WDA/index.html">Home</a></li>
+                <li class="nav-item"><a href="https://tomireg.github.io/WDA/equipment.html">Weapons and armour</a></li>
+                <li class="nav-item"><a href="https://tomireg.github.io/WDA/forms.html">Competition forms</a></li>
+                <li class="nav-item"><a href="https://tomireg.github.io/WDA/videogames.html">Buhurt in video games</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="grid-container">
             <div class="img1">
-            <img src="images/battle.jpg" alt="armoured fighters battling">
+                <img src="images/battle.jpg" alt="armoured fighters battling" width="100%" height="auto">
             </div>
             <div class="article1">
-            <article>
-                <h2>what is Buhurt?</h2>
-            <p>Historical Medieval Battles (HMB) or Buhurt or Armored Combat is a modern full contact fighting sport where fighters wear historically accurate medieval armour and use blunted weapons made of steel. 
-                The word Buhurt comes from the Old French word béhourd which means "joust" or "tournament.
-                Equipment has to follow regulations on historical authenticity and safety. these rules are published on the official Battle of the Nations website. 
-                The protective armour covers the fighters full body. It is usually crafted from steel or other permitted alloys and is aesthetically as close to their historical counterparts as possible. 
-                This separates Buhurt from Historical European Martial Arts (HEMA) which in contrast, uses modern protective equipment such as a modern fencing helmet, padded fencing jacket, modern padded/heavy duty fencing gloves, forearm and leg protection.
-                Contestants may aim blows and hits at any parts of the body that are in line with the regulations. Grappling and percussive techniques are permitted, thrusts are forbidden.
-                Unlike staged battles, that can be seen at festivals of historical reenactment of the Middle Ages the competitions in buhurt are full contact sporting events without coreography. Fights are refereed by the referees called knight marshals who have special training and combat experience.</p>
-            </article>
+                <article>
+                    <h2>what is Buhurt?</h2>
+                    <p>Historical Medieval Battles (HMB) or Buhurt or Armored Combat is a modern full contact fighting
+                        sport where fighters wear historically accurate medieval armour and use blunted weapons made of
+                        steel.
+                        The word Buhurt comes from the Old French word béhourd which means "joust" or "tournament.
+                        Equipment has to follow regulations on historical authenticity and safety. these rules are
+                        published on the official Battle of the Nations website.
+                        The protective armour covers the fighters full body. It is usually crafted from steel or other
+                        permitted alloys and is aesthetically as close to their historical counterparts as possible.
+                        This separates Buhurt from Historical European Martial Arts (HEMA) which in contrast, uses
+                        modern protective equipment such as a modern fencing helmet, padded fencing jacket, modern
+                        padded/heavy duty fencing gloves, forearm and leg protection.
+                        Contestants may aim blows and hits at any parts of the body that are in line with the
+                        regulations. Grappling and percussive techniques are permitted, thrusts are forbidden.
+                        Unlike staged battles, that can be seen at festivals of historical reenactment of the Middle
+                        Ages the competitions in buhurt are full contact sporting events without coreography. Fights are
+                        refereed by the referees called knight marshals who have special training and combat experience.
+                    </p>
+                </article>
             </div>
             <div class="img2">
-                <img src="images/knights.jpg" alt="medieval knights">
+                <img src="images/knights.jpg" alt="medieval knights" width="100%" height="auto">
             </div>
             <div class="article2">
-            <article>
-                <h2>The History of Buhurt</h2>
-            <p>During the Middle-Ages skilled knights travelled from tournament to tournament to make a small fortune. Often times a knight would find a lord to permanently conscript him and thereby securing his future. 
-                In modern times in the late 1990s and the beginning of the 21st century when most Eastern European countries reenactors used wooden or textolite weapons, Russia, Belarus and Ukraine began to hold large-scale historical medieval battles using steel arms. 
-                An example is the festival "Zhelezny Grad" (Iron Town) held in Izborsk, where buhurts involving hundreds of fighters took place or Sword of Russia tournament from 1996.
-                The first European Championship took place in Ukraine in 2005, with nominations "Sword and Shield", and "Sword vs Sword".
-                The first held Battle of the Nations in Khotyn Fortress in Ukraine where participants from Ukraine, Poland, Belarus and Russia competed under unified rules and regulations started the expansion of the sport. 
-                This event attracted participants from the rest of Europe and outside of it and buhurt gained worldwide attention from reenactment community. 
-                Battle of the Nations is held every other year at a new fortress or castle. </p>
-            </article>
+                <article>
+                    <h2>The History of Buhurt</h2>
+                    <p>During the Middle-Ages skilled knights travelled from tournament to tournament to make a small
+                        fortune. Often times a knight would find a lord to permanently conscript him and thereby
+                        securing his future.
+                        In modern times in the late 1990s and the beginning of the 21st century when most Eastern
+                        European countries reenactors used wooden or textolite weapons, Russia, Belarus and Ukraine
+                        began to hold large-scale historical medieval battles using steel arms.
+                        An example is the festival "Zhelezny Grad" (Iron Town) held in Izborsk, where buhurts involving
+                        hundreds of fighters took place or Sword of Russia tournament from 1996.
+                        The first European Championship took place in Ukraine in 2005, with nominations "Sword and
+                        Shield", and "Sword vs Sword".
+                        The first held Battle of the Nations in Khotyn Fortress in Ukraine where participants from
+                        Ukraine, Poland, Belarus and Russia competed under unified rules and regulations started the
+                        expansion of the sport.
+                        This event attracted participants from the rest of Europe and outside of it and buhurt gained
+                        worldwide attention from reenactment community.
+                        Battle of the Nations is held every other year at a new fortress or castle.
+                    </p>
+                </article>
             </div>
-<div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/oZKJhyAR3zM?si=wtzJoTHv4cZa0HMb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <p>Find out more about Buhurt on <a href="https://en.wikipedia.org/wiki/Historical_Medieval_Battles">Wikipedia</a></p>
-</div>
-        </main>
-        <footer>Tamas Regeczy 2023 <a href = "mailto: tomregeczy@gmail.com">Send Email</a></footer>
-    </body>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oZKJhyAR3zM?si=wtzJoTHv4cZa0HMb"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <p>Find out more about Buhurt on <a
+                    href="https://en.wikipedia.org/wiki/Historical_Medieval_Battles">Wikipedia</a></p>
+        </div>
+    </main>
+    <footer>Tamas Regeczy 2023 <a href="mailto: tomregeczy@gmail.com">Send Email</a></footer>
+</body>
 
 </html>
+<!--
+<div class="img1">
+    <img src="images/battle.jpg" alt="armoured fighters battling">
+</div>
+<div class="article1">
+    <article>
+        <h2>what is Buhurt?</h2>
+        <p>Historical Medieval Battles (HMB) or Buhurt or Armored Combat is a modern full contact fighting sport where fighters wear historically accurate medieval armour and use blunted weapons made of steel. 
+        The word Buhurt comes from the Old French word béhourd which means "joust" or "tournament.
+        Equipment has to follow regulations on historical authenticity and safety. these rules are published on the official Battle of the Nations website. 
+        The protective armour covers the fighters full body. It is usually crafted from steel or other permitted alloys and is aesthetically as close to their historical counterparts as possible. 
+        This separates Buhurt from Historical European Martial Arts (HEMA) which in contrast, uses modern protective equipment such as a modern fencing helmet, padded fencing jacket, modern padded/heavy duty fencing gloves, forearm and leg protection.
+        Contestants may aim blows and hits at any parts of the body that are in line with the regulations. Grappling and percussive techniques are permitted, thrusts are forbidden.
+        Unlike staged battles, that can be seen at festivals of historical reenactment of the Middle Ages the competitions in buhurt are full contact sporting events without coreography. Fights are refereed by the referees called knight marshals who have special training and combat experience.
+        </p>
+    </article>
+</div>
+<div class="img2">
+    <img src="images/knights.jpg" alt="medieval knights">
+</div>
+<div class="article2">
+    <article>
+        <h2>The History of Buhurt</h2>
+        <p>During the Middle-Ages skilled knights travelled from tournament to tournament to make a small fortune. Often times a knight would find a lord to permanently conscript him and thereby securing his future. 
+        In modern times in the late 1990s and the beginning of the 21st century when most Eastern European countries reenactors used wooden or textolite weapons, Russia, Belarus and Ukraine began to hold large-scale historical medieval battles using steel arms. 
+        An example is the festival "Zhelezny Grad" (Iron Town) held in Izborsk, where buhurts involving hundreds of fighters took place or Sword of Russia tournament from 1996.
+        The first European Championship took place in Ukraine in 2005, with nominations "Sword and Shield", and "Sword vs Sword".
+        The first held Battle of the Nations in Khotyn Fortress in Ukraine where participants from Ukraine, Poland, Belarus and Russia competed under unified rules and regulations started the expansion of the sport. 
+        This event attracted participants from the rest of Europe and outside of it and buhurt gained worldwide attention from reenactment community. 
+        Battle of the Nations is held every other year at a new fortress or castle.
+        </p>
+    </article>
+</div>
+<div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/oZKJhyAR3zM?si=wtzJoTHv4cZa0HMb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p>Find out more about Buhurt on <a href="https://en.wikipedia.org/wiki/Historical_Medieval_Battles">Wikipedia</a></p>
+</div>
+-->
