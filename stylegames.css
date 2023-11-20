@@ -135,3 +135,89 @@ h2 {
     padding-right: 5%;
     padding-left: 5%;
 }
+
+@media(max-width:1240px) {
+    .logo1 {
+        display: block;
+        box-sizing: border-box;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        justify-self: center;
+    }
+
+    .logo2 {
+        display: block;
+        box-sizing: border-box;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        justify-self: center;
+    }
+
+    h1 {
+        display: block;
+        box-sizing: border-box;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        justify-self: center;
+    }
+}
+
+@media(max-width:720px) {
+    .logo1 {
+        display: block;
+        box-sizing: border-box;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        justify-self: center;
+    }
+
+    .logo2 {
+        display: block;
+        box-sizing: border-box;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        justify-self: center;
+    }
+
+    h1 {
+        display: block;
+        box-sizing: border-box;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        justify-self: center;
+    }
+}
+
+
+.logo1 {
+    display: block;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    justify-self: center;
+}
+
+.logo2 {
+    display: block;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    justify-self: center;
+}
+
+h1 {
+    display: block;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    justify-self: center;
+}
