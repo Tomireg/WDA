@@ -144,14 +144,79 @@ a:visited {
     color: brown;
 }
 
-@media(max-width:1240px){
+@media(max-width:1240px) {
     .logo1 {
         display: block;
-    }  
+        box-sizing: border-box;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
     .logo2 {
         display: block;
+        box-sizing: border-box;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
     }
+
     h1 {
         display: block;
+        box-sizing: border-box;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
     }
+}
+
+@media(max-width:720px) {
+    .logo1 {
+        display: block;
+        box-sizing: border-box;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .logo2 {
+        display: block;
+        box-sizing: border-box;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    h1 {
+        display: block;
+        box-sizing: border-box;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+
+.logo1 {
+    display: block;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.logo2 {
+    display: block;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+h1 {
+    display: block;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
