@@ -143,3 +143,15 @@ a:visited {
     background-size: cover;
     color: brown;
 }
+
+@media(max-width:1240px){
+    .logo1 {
+        display: block;
+    }  
+    .logo2 {
+        display: block;
+    }
+    h1 {
+        display: block;
+    }
+}
