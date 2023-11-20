@@ -86,6 +86,61 @@
             text-align: center;
             color: chocolate;
         }
+
+        .grid-container {
+            align-items: center;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 0.5fr 0.5fr 2fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "video1 article1 article1 article1"
+                "article2 article2 article2 video2";
+
+        }
+
+        .video1 {
+            grid-area: video1;
+        }
+
+        .article1 {
+            grid-area: article1;
+        }
+
+        .video2 {
+            grid-area: video2;
+            justify-self: right;
+        }
+
+        .article2 {
+            grid-area: article2;
+        }
+
+        .video1 {
+            width: 100%;
+            height: auto;
+        }
+
+        .article1 {
+            text-align: justify;
+            width: 90%;
+            height: auto;
+            padding-left: 5%;
+            font-size: 1.5rem;
+        }
+
+        .article2 {
+            text-align: justify;
+            width: 90%;
+            height: auto;
+            padding-right: 5%;
+            font-size: 1.5rem;
+        }
+
+        .video2 {
+            width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 

@@ -33,10 +33,6 @@ h2 {
     justify-self: right;
 }
 
-.video {
-    grid-area: video;
-}
-
 .article2 {
     grid-area: article2;
 }
