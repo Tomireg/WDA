@@ -94,13 +94,14 @@
             grid-template-columns: 2fr 0.5fr 0.5fr 2fr;
             grid-template-rows: 1fr 1fr;
             grid-template-areas:
-                "video1 article1 article1 article1"
-                "article2 article2 article2 video2";
+                "video1 video1 article1 article1"
+                "article2 article2 video2 video2";
 
         }
 
         .video1 {
             grid-area: video1;
+            justify-content: center;
         }
 
         .article1 {
@@ -109,7 +110,7 @@
 
         .video2 {
             grid-area: video2;
-            justify-self: right;
+            justify-content: center;
         }
 
         .article2 {
@@ -117,8 +118,11 @@
         }
 
         .video1 {
+            justify-content: center;
             width: 100%;
             height: auto;
+            padding-left: 5%;
+            padding-right: 5%;
         }
 
         .article1 {
@@ -126,6 +130,7 @@
             width: 90%;
             height: auto;
             padding-left: 5%;
+            padding-right: 5%;
             font-size: 1.5rem;
         }
 
@@ -134,12 +139,16 @@
             width: 90%;
             height: auto;
             padding-right: 5%;
+            padding-left: 5%;
             font-size: 1.5rem;
         }
 
         .video2 {
+            justify-content: center;
             width: 100%;
             height: auto;
+            padding-right: 5%;
+            padding-left: 5%;
         }
     </style>
 </head>
