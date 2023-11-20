@@ -1,37 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Buhurt</title>
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <header>
-            <div class="logo-container">
-                <p><img src="images/logo.png" alt="crossed swords"></p>
-                <h1>The World of Buhurt</h1>
-                <p><img src="images/logo.png" alt="crossed swords"></p>
-            </div>
-            <nav class="nav-container">
-                <ul>
-                    <li class="nav-item"><a href="https://tomireg.github.io/WDA/index.html">Home</a></li>
-                    <li class="nav-item"><a href="https://tomireg.github.io/WDA/equipment.html">Weapons and armour</a></li>
-                    <li class="nav-item"><a href="https://tomireg.github.io/WDA/forms.html">Competition forms</a></li>
-                    <li class="nav-item"><a href="https://tomireg.github.io/WDA/videogames.html">Buhurt in video games</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-<p>Chivalry 2</p>
-<p>Chivalry 2 is a multiplayer first person slasher inspired by epic medieval movie battles. 
-    Players are thrust into the action of every iconic moment of the era - from clashing swords, to storms of flaming arrows, to sprawling castle sieges and more.</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/0Gxck0RZmAU?si=B-wB5jOrwqsjHuD5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <p>Mordhau</p>
-    <p>Mordhau is a multiplayer medieval melee game with a strong emphasis on skill-based combat.</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/b0vo2ev3VOY?si=5rWgTqjMhIYarljm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </main>
-        <footer>Tamas Regeczy 2023 <a href = "mailto: tomregeczy@gmail.com">Send Email</a></footer>
-        </body>
+
+<head>
+    <title>Buhurt</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            font-size: 4rem;
+            justify-self: center;
+            background-image: url(images/fight.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color: brown;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+
+        nav li {
+            display: inline-block;
+        }
+
+        nav li:hover,
+        nav li:focus {
+            background-color: silver;
+        }
+
+
+
+        a:link {
+            color: goldenrod
+        }
+
+        a:hover {
+            color: chocolate;
+        }
+
+        a:visited {
+            color: steelblue;
+        }
+
+        .nav-item {
+            background-color: brown;
+            border: 1px solid black;
+            padding: .5em 1em;
+            font-size: 2rem;
+
+        }
+
+        .nav-container {
+            background-color: steelblue;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <p><img src="images/logo.png" alt="crossed swords"></p>
+            <h1>The World of Buhurt</h1>
+            <p><img src="images/logo.png" alt="crossed swords"></p>
+        </div>
+        <nav class="nav-container">
+            <ul>
+                <li class="nav-item"><a href="https://tomireg.github.io/WDA/index.html">Home</a></li>
+                <li class="nav-item"><a href="https://tomireg.github.io/WDA/equipment.html">Weapons and armour</a></li>
+                <li class="nav-item"><a href="https://tomireg.github.io/WDA/forms.html">Competition forms</a></li>
+                <li class="nav-item"><a href="https://tomireg.github.io/WDA/videogames.html">Buhurt in video games</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>Chivalry 2</p>
+        <p>Chivalry 2 is a multiplayer first person slasher inspired by epic medieval movie battles.
+            Players are thrust into the action of every iconic moment of the era - from clashing swords, to storms of
+            flaming arrows, to sprawling castle sieges and more.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0Gxck0RZmAU?si=B-wB5jOrwqsjHuD5"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <p>Mordhau</p>
+        <p>Mordhau is a multiplayer medieval melee game with a strong emphasis on skill-based combat.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/b0vo2ev3VOY?si=5rWgTqjMhIYarljm"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </main>
+    <footer>Tamas Regeczy 2023 <a href="mailto: tomregeczy@gmail.com">Send Email</a></footer>
+</body>
+
 </html>

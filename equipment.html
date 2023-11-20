@@ -1,54 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Buhurt</title>
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <header>
-            <div class="logo-container">
-                <p><img src="images/logo.png" alt="crossed swords"></p>
-                <h1>The World of Buhurt</h1>
-                <p><img src="images/logo.png" alt="crossed swords"></p>
-            </div>
-            <nav class="nav-container">
-                <ul>
-                    <li class="nav-item"><a href="https://tomireg.github.io/WDA/index.html">Home</a></li>
-                    <li class="nav-item"><a href="https://tomireg.github.io/WDA/equipment.html">Weapons and armour</a></li>
-                    <li class="nav-item"><a href="https://tomireg.github.io/WDA/forms.html">Competition forms</a></li>
-                    <li class="nav-item"><a href="https://tomireg.github.io/WDA/videogames.html">Buhurt in video games</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-<p>Here are some of the most commonly used equipments in Buhurt</p>
-<p>Longsword</p>
-<p>A longsword is any sword that is generally wielded with two hands. 
-    A defining characteristic of the sword is the length of the handle. The hilts range from 8 to 16 inches long to provide room for gauntleted hands.
-    Most long swords were double edged. 
-    The weapon was designed for utility, the whole sword from the pommel to the tip must be useful in combat. 
-    While the designs vary in ornamentation over the 350 years it was used, it carried much of the same look through the period. 
-    Compared to the Asian Katana, longswords greatly differ. The hilt is longer, there is a cross guard, the overall weight is much heavier and the blades were straight. 
-    </p>
-    <p>Shields</p>
-    <p>A shield is a broad piece of metal or another suitable material, held by straps or a handle attached on one side, used as a protection against blows or missiles. 
-        Shields can be put into three categories, small, medium and large. These categories represent the function of the shield. 
-        Small shields, for instance, such as bucklers or hungarian punch shields doubled as weapons. 
-        They provided minimal defense and moderate level of additional offense. They had to be used strategically and with a great amount of skill.</p>
-        <p>Buckler</p>
-        <p>The buckler is a small round shield typically 16 inches or less in diameter that is made out of metal. 
-            It provides a moderate level of defense and the ability to use the shield as an offensive weapon. 
+
+<head>
+    <title>Buhurt</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            font-size: 4rem;
+            justify-self: center;
+            background-image: url(images/fight.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color: brown;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+
+        nav li {
+            display: inline-block;
+        }
+
+        nav li:hover,
+        nav li:focus {
+            background-color: silver;
+        }
+
+
+
+        a:link {
+            color: goldenrod
+        }
+
+        a:hover {
+            color: chocolate;
+        }
+
+        a:visited {
+            color: steelblue;
+        }
+
+        .nav-item {
+            background-color: brown;
+            border: 1px solid black;
+            padding: .5em 1em;
+            font-size: 2rem;
+
+        }
+
+        .nav-container {
+            background-color: steelblue;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <p><img src="images/logo.png" alt="crossed swords"></p>
+            <h1>The World of Buhurt</h1>
+            <p><img src="images/logo.png" alt="crossed swords"></p>
+        </div>
+        <nav class="nav-container">
+            <ul>
+                <li class="nav-item"><a href="https://tomireg.github.io/WDA/index.html">Home</a></li>
+                <li class="nav-item"><a href="https://tomireg.github.io/WDA/equipment.html">Weapons and armour</a></li>
+                <li class="nav-item"><a href="https://tomireg.github.io/WDA/forms.html">Competition forms</a></li>
+                <li class="nav-item"><a href="https://tomireg.github.io/WDA/videogames.html">Buhurt in video games</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>Here are some of the most commonly used equipments in Buhurt</p>
+        <p>Longsword</p>
+        <p>A longsword is any sword that is generally wielded with two hands.
+            A defining characteristic of the sword is the length of the handle. The hilts range from 8 to 16 inches long
+            to provide room for gauntleted hands.
+            Most long swords were double edged.
+            The weapon was designed for utility, the whole sword from the pommel to the tip must be useful in combat.
+            While the designs vary in ornamentation over the 350 years it was used, it carried much of the same look
+            through the period.
+            Compared to the Asian Katana, longswords greatly differ. The hilt is longer, there is a cross guard, the
+            overall weight is much heavier and the blades were straight.
         </p>
-            <p>Gambeson</p>
-            <p>A gambeson is a padded defensive jacket, worn as armour separately, or combined with mail or plate armour. 
-                Gambesons were produced with a sewing technique called quilting that produced a padded cloth.</p>
-                <p>Full armour</p>
-                <p>Historically acurate plate armour covering most parts of the body. Includes a helmet, chestplate, arm and leg plates and various other pieces usually crafted from steel.</p>
-        </main>
-        <footer>Tamas Regeczy 2023 <a href = "mailto: tomregeczy@gmail.com">Send Email</a></footer>
-        </body>
+        <p>Shields</p>
+        <p>A shield is a broad piece of metal or another suitable material, held by straps or a handle attached on one
+            side, used as a protection against blows or missiles.
+            Shields can be put into three categories, small, medium and large. These categories represent the function
+            of the shield.
+            Small shields, for instance, such as bucklers or hungarian punch shields doubled as weapons.
+            They provided minimal defense and moderate level of additional offense. They had to be used strategically
+            and with a great amount of skill.</p>
+        <p>Buckler</p>
+        <p>The buckler is a small round shield typically 16 inches or less in diameter that is made out of metal.
+            It provides a moderate level of defense and the ability to use the shield as an offensive weapon.
+        </p>
+        <p>Gambeson</p>
+        <p>A gambeson is a padded defensive jacket, worn as armour separately, or combined with mail or plate armour.
+            Gambesons were produced with a sewing technique called quilting that produced a padded cloth.</p>
+        <p>Full armour</p>
+        <p>Historically acurate plate armour covering most parts of the body. Includes a helmet, chestplate, arm and leg
+            plates and various other pieces usually crafted from steel.</p>
+    </main>
+    <footer>Tamas Regeczy 2023 <a href="mailto: tomregeczy@gmail.com">Send Email</a></footer>
+</body>
+
 </html>
-        
