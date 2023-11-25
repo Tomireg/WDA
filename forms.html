@@ -23,11 +23,16 @@
             margin: 0 auto;
             display: grid;
             grid-template-columns: 2fr 0.5fr 0.5fr 2fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
             grid-template-areas:
                 "img1 article1 article1 article1"
-                "article2 article2 article2 img2";
+                "article2 article2 article2 img2"
+                ". form1 form1 .";
 
+        }
+
+        .form1 {
+            grid-area: form1;
         }
 
         .img1 {
@@ -47,6 +52,11 @@
             grid-area: article2;
         }
 
+        .form1 {
+            border: 2px solid steelblue;
+            color: brown;
+        }
+
         .img1 {
             width: 100%;
             height: auto;
@@ -79,13 +89,6 @@
             height: auto;
             padding-left: 5%;
             padding-right: 5%;
-        }
-
-        .video-container {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            height: auto;
         }
 
         .footer-container {
@@ -213,6 +216,9 @@
     </header>
     <main>
         <div class="grid-container">
+            <div class="img1">
+                <img src="images/single.jpg" alt="two fighters battling" width="100%" height="auto">
+            </div>
             <div class="article1">
                 <article>
                     <h2>Single Categories</h2>
@@ -264,13 +270,17 @@
                     </p>
                 </article>
             </div>
+            <div class="img2">
+                <img src="images/mass.jpg" alt="group of fighters battling" width="100%" height="auto">
+            </div>
             <div class="article2">
                 <article>
                     <h2>Mass Categories</h2>
                     <p>The biggest difference between single and mass battles is that in mass battles the hits are not
                         counted, instead the last man standing on his feet is the victor.
                         There are some other categories like the 2 vs 2 deathmatch for example. In deathmatches several
-                        two-member units meet on the battlefield the fight is all against all and the winner is the two-member
+                        two-member units meet on the battlefield the fight is all against all and the winner is the
+                        two-member
                         unit, of which at least one fighter is on his feet. Group fights can be:
                     <ul>
                         <li>5 vs 5</li>
