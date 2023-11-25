@@ -7,16 +7,96 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .logo-container {
+        main {
+            color: brown;
+            background-color: silver;
+        }
+
+        h2 {
+            text-align: center;
+            color: chocolate;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .grid-container {
+            align-items: center;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 0.5fr 0.5fr 2fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "img1 article1 article1 article1"
+                "article2 article2 article2 img2";
+
+        }
+
+        .img1 {
+            grid-area: img1;
+        }
+
+        .article1 {
+            grid-area: article1;
+        }
+
+        .img2 {
+            grid-area: img2;
+            justify-self: right;
+        }
+
+        .article2 {
+            grid-area: article2;
+        }
+
+        .img1 {
+            width: 100%;
+            height: auto;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        .article1 {
+            text-align: justify;
+            width: 90%;
+            height: auto;
+            padding-left: 5%;
+            padding-right: 5%;
+            font-size: 1.5rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .article2 {
+            text-align: justify;
+            width: 90%;
+            height: auto;
+            padding-right: 5%;
+            padding-left: 5%;
+            font-size: 1.5rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .img2 {
+            width: 100%;
+            height: auto;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        .video-container {
             display: flex;
             justify-content: center;
-            font-size: 4rem;
-            justify-self: center;
-            background-image: url(images/fight.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            color: brown;
+            width: 100%;
+            height: auto;
+        }
+
+        .footer-container {
+            padding: 10;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            background-color: brown;
+            color: silver;
+            font-size: 1rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
 
         nav ul {
@@ -68,25 +148,43 @@
             justify-content: space-evenly;
         }
 
-        .footer-container {
-            padding: 10;
-            border: 1px solid black;
+        .logo-container {
             display: flex;
             justify-content: center;
-            background-color: brown;
-            color: silver;
-            font-size: 1rem;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-
-        main {
+            font-size: 4rem;
+            justify-self: center;
+            background-image: url(images/fight.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
             color: brown;
-            background-color: silver;
         }
 
-        h2 {
-            text-align: center;
-            color: chocolate;
+        .logo1 {
+            display: block;
+            box-sizing: border-box;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+            justify-self: center;
+        }
+
+        .logo2 {
+            display: block;
+            box-sizing: border-box;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+            justify-self: center;
+        }
+
+        h1 {
+            display: block;
+            box-sizing: border-box;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+            justify-self: center;
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
     </style>
@@ -117,7 +215,7 @@
         <div class="grid-container">
             <div class="article1">
                 <article>
-                    <h2>Single categories</h2>
+                    <h2>Single Categories</h2>
                     <p>Single categories can be tournaments or professional fights, but there is also a category called
                         "Triathlon" where Contestants fight three rounds with different weapons
                         in each. First: longsword, then: sword-buckler, and the last: shield-sword.
@@ -133,8 +231,7 @@
                         In tournaments, points and hits are counted. Fighters must deliver a certain number of blows,
                         commonly 10,
                         to their opponent or gain the maximum number of points within a certain period of time. The
-                        tournaments are
-                        divided into:
+                        tournaments are divided into:
                     <table>
                         <tr>
                             <th>Categorie</th>
@@ -169,16 +266,12 @@
             </div>
             <div class="article2">
                 <article>
-                    <h2>Mass categories</h2>
+                    <h2>Mass Categories</h2>
                     <p>The biggest difference between single and mass battles is that in mass battles the hits are not
-                        counted,
-                        instead the last man standing on his feet is the victor.
+                        counted, instead the last man standing on his feet is the victor.
                         There are some other categories like the 2 vs 2 deathmatch for example. In deathmatches several
-                        two-member
-                        units meet on the battlefield the fight is all against all and the winner is the two-member
-                        unit, of
-                        which
-                        at least one fighter is on his feet.
+                        two-member units meet on the battlefield the fight is all against all and the winner is the two-member
+                        unit, of which at least one fighter is on his feet. Group fights can be:
                     <ul>
                         <li>5 vs 5</li>
                         <li>10 vs 10</li>
@@ -191,11 +284,14 @@
                 </article>
             </div>
             <div class="form1">
+                <h2>What category would you like more information on?</h2>
                 <form action="/action_page.php" method="get">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name"><br><br>
                     <label for="email">Email:</label>
                     <input type="text" id="email" name="email"><br><br>
+                    <label for="interest">Category:</label>
+                    <input type="text" id="interest" name="interest"><br><br>
                     <input type="submit" value="Submit">
                 </form>
             </div>
