@@ -110,6 +110,7 @@ h2 {
 }
 
 .video1 {
+    justify-content: center;
     justify-self: center;
     padding-left: 5%;
     padding-right: 5%;
@@ -138,6 +139,7 @@ h2 {
 }
 
 .video2 {
+    justify-content: center;
     justify-self: center;
     padding-right: 5%;
     padding-left: 5%;
