@@ -179,6 +179,10 @@ h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+body {
+    background-size: cover;
+}
+
 @media (max-width: 800px) {
     .nav-container {
         flex-direction: column;
@@ -193,13 +197,13 @@ h1 {
         font-size: 2rem;
     }
 
-    .logo1 {
-        max-width: 50%;
+    .logo1 img {
+        max-width: 80%;
         height: auto;
     }
 
-    .logo2 {
-        max-width: 50%;
+    .logo2 img {
+        max-width: 80%;
         height: auto;
     }
 
