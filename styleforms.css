@@ -206,6 +206,8 @@ td {
 
 body {
     background-size: cover;
+    margin: 0;
+    padding: 0;
 }
 
 @media (max-width: 800px) {
