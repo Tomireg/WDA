@@ -178,3 +178,9 @@ h1 {
     justify-self: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+@media (max-width: 800px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
