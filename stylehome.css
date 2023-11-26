@@ -204,4 +204,8 @@ h1 {
     .article2 {
         font-size: 0.5rem;
     }
+    .video-container {
+        width: 50%;
+        height: auto;
+    }
 }
